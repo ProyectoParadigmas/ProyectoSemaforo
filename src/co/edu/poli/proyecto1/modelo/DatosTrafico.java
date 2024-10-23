@@ -23,7 +23,7 @@ public class DatosTrafico {
      */
     public void actualizarDatos(double flujo, double velocidad) {
         // TODO implement here
-        return ;
+        return;
     }
 
 }
