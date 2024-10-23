@@ -18,9 +18,9 @@ public class Principal {
      * @param args 
      * @return
      */
-    public static void main(String args) {
+    public static void main(String [ ] args) {
         // TODO implement here
-        return null;
+        return ;
     }
 
 }

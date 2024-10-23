@@ -23,6 +23,12 @@ public interface Operacion {
     public SemaforoInteligente read(void String id);
 
     /**
+     * @param String all 
+     * @return
+     */
+    public SemaforoInteligente [ ] read1(void String all);
+
+    /**
      * @param String id 
      * @param SemaforoInteligente nuevoSemaforo 
      * @return
@@ -36,17 +42,17 @@ public interface Operacion {
     public String delete(void String id);
 
     /**
-     * @param SemaforoInteligente[] semaforo 
+     * @param SemaforoInteligente[ ] semaforo 
      * @param String name 
      * @return
      */
-    public String serializar(void SemaforoInteligente[] semaforo, void String name);
+    public String serializar(void SemaforoInteligente[ ] semaforo, void String name);
 
     /**
      * @param String path 
      * @param String name 
      * @return
      */
-    public SemaforoInteligente deserializar(void String path, void String name);
+    public SemaforoInteligente [ ] deserializar(void String path, void String name);
 
 }

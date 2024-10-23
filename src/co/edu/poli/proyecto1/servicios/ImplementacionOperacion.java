@@ -19,7 +19,7 @@ public class ImplementacionOperacion implements Operacion {
     /**
      * 
      */
-    public SemaforoInteligente [ ] semaforoPeatonal;
+    private SemaforoInteligente semaforoVehicular;
 
     /**
      * @param x 
@@ -36,7 +36,16 @@ public class ImplementacionOperacion implements Operacion {
      */
     public SemaforoInteligente read(void String id) {
         // TODO implement Operacion.read() here
-        return null;
+        return ;
+    }
+
+    /**
+     * @param String all 
+     * @return
+     */
+    public SemaforoInteligente [ ] read1(void String all) {
+        // TODO implement Operacion.read() here
+        return ;
     }
 
     /**
@@ -46,7 +55,7 @@ public class ImplementacionOperacion implements Operacion {
      */
     public String update(void String id, void SemaforoInteligente nuevoSemaforo) {
         // TODO implement Operacion.update() here
-        return "";
+        return ;
     }
 
     /**
@@ -55,17 +64,17 @@ public class ImplementacionOperacion implements Operacion {
      */
     public String delete(void String id) {
         // TODO implement Operacion.delete() here
-        return "";
+        return;
     }
 
     /**
-     * @param SemaforoInteligente[] semaforo 
+     * @param SemaforoInteligente[ ] semaforo 
      * @param String name 
      * @return
      */
-    public String serializar(void SemaforoInteligente[] semaforo, void String name) {
+    public String serializar(void SemaforoInteligente[ ] semaforo, void String name) {
         // TODO implement Operacion.serializar() here
-        return "";
+        return;
     }
 
     /**
@@ -73,9 +82,9 @@ public class ImplementacionOperacion implements Operacion {
      * @param String name 
      * @return
      */
-    public SemaforoInteligente deserializar(void String path, void String name) {
+    public SemaforoInteligente [ ] deserializar(void String path, void String name) {
         // TODO implement Operacion.deserializar() here
-        return null;
+        return;
     }
 
 }

@@ -1,27 +1,27 @@
 package co.edu.poli.proyecto1.modelo;
 
-import java.io.*;
-import java.util.*;
 
-/**
- * 
- */
 public class SemaforoVehicular extends SemaforoInteligente {
 
-    /**
-     * Default constructor
-     */
-    public SemaforoVehicular() {
-    }
-
-    /**
-     * 
-     */
+  
     private int numeroCarriles;
 
-    /**
-     * @return
-     */
-    public abstract String describirSemaforoInteligente();
+	public SemaforoVehicular(int idSemaforo, String ubicacion, String estado, Sensor[] sensor, int numeroCarriles) {
+		super(idSemaforo, ubicacion, estado, sensor);
+		this.numeroCarriles = numeroCarriles;
+	}
+
+	public int getNumeroCarriles() {
+		return numeroCarriles;
+	}
+
+	public void setNumeroCarriles(int numeroCarriles) {
+		this.numeroCarriles = numeroCarriles;
+	}
+
+	@Override
+	public String toString() {
+		return "SemaforoVehicular [numeroCarriles=" + numeroCarriles + "]";
+	}
 
 }

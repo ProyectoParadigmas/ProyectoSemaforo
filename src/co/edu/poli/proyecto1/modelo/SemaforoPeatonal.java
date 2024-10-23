@@ -1,22 +1,9 @@
 package co.edu.poli.proyecto1.modelo;
 
-import java.io.*;
-import java.util.*;
 
-/**
- * 
- */
 public class SemaforoPeatonal extends SemaforoInteligente {
 
-    /**
-     * Default constructor
-     */
-    public SemaforoPeatonal() {
-    }
-
-    /**
-     * 
-     */
+   
     private double tiempoVerdePeaton;
 
     /**
@@ -24,9 +11,33 @@ public class SemaforoPeatonal extends SemaforoInteligente {
      */
     private double tiempoRojoPeaton;
 
-    /**
-     * @return
-     */
-    public abstract String describirSemaforoInteligente();
+	public SemaforoPeatonal(int idSemaforo, String ubicacion, String estado, Sensor[] sensor, double tiempoVerdePeaton,
+			double tiempoRojoPeaton) {
+		super(idSemaforo, ubicacion, estado, sensor);
+		this.tiempoVerdePeaton = tiempoVerdePeaton;
+		this.tiempoRojoPeaton = tiempoRojoPeaton;
+	}
+
+	public double getTiempoVerdePeaton() {
+		return tiempoVerdePeaton;
+	}
+
+	public void setTiempoVerdePeaton(double tiempoVerdePeaton) {
+		this.tiempoVerdePeaton = tiempoVerdePeaton;
+	}
+
+	public double getTiempoRojoPeaton() {
+		return tiempoRojoPeaton;
+	}
+
+	public void setTiempoRojoPeaton(double tiempoRojoPeaton) {
+		this.tiempoRojoPeaton = tiempoRojoPeaton;
+	}
+
+	@Override
+	public String toString() {
+		return "SemaforoPeatonal [tiempoVerdePeaton=" + tiempoVerdePeaton + ", tiempoRojoPeaton=" + tiempoRojoPeaton
+				+ "]";
+	}
 
 }

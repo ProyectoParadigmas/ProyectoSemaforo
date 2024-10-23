@@ -1,22 +1,10 @@
 package co.edu.poli.proyecto1.modelo;
 
-import java.io.*;
-import java.util.*;
+import java.util.Arrays;
 
-/**
- * 
- */
-public abstract class SemaforoInteligente {
+public class SemaforoInteligente {
 
-    /**
-     * Default constructor
-     */
-    public SemaforoInteligente() {
-    }
-
-    /**
-     * 
-     */
+ 
     private int idSemaforo;
 
     /**
@@ -40,7 +28,7 @@ public abstract class SemaforoInteligente {
      */
     public void cambiarEstado(String nuevoEstado) {
         // TODO implement here
-        return null;
+        return ;
     }
 
     /**
@@ -48,7 +36,7 @@ public abstract class SemaforoInteligente {
      */
     public void recopilarDatos() {
         // TODO implement here
-        return null;
+        return ;
     }
 
     /**
@@ -56,31 +44,53 @@ public abstract class SemaforoInteligente {
      */
     public void ajustarTiempoLuz() {
         // TODO implement here
-        return null;
+        return ;
     }
 
-    /**
-     * @param tipoEvento 
-     * @return
-     */
-    protected void registrarEvento(String tipoEvento) {
-        // TODO implement here
-        return null;
-    }
+	public SemaforoInteligente(int idSemaforo, String ubicacion, String estado, Sensor[] sensor) {
+		super();
+		this.idSemaforo = idSemaforo;
+		this.ubicacion = ubicacion;
+		this.estado = estado;
+		this.sensor = sensor;
+	}
 
-    /**
-     * @param tipoEvento 
-     * @param tiempoReal 
-     * @return
-     */
-    protected void registrarEvento(String tipoEvento, double tiempoReal) {
-        // TODO implement here
-        return null;
-    }
+	public int getIdSemaforo() {
+		return idSemaforo;
+	}
 
-    /**
-     * @return
-     */
-    public abstract String describirSemaforoInteligente();
+	public void setIdSemaforo(int idSemaforo) {
+		this.idSemaforo = idSemaforo;
+	}
+
+	public String getUbicacion() {
+		return ubicacion;
+	}
+
+	public void setUbicacion(String ubicacion) {
+		this.ubicacion = ubicacion;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public Sensor[] getSensor() {
+		return sensor;
+	}
+
+	public void setSensor(Sensor[] sensor) {
+		this.sensor = sensor;
+	}
+
+	@Override
+	public String toString() {
+		return "SemaforoInteligente [idSemaforo=" + idSemaforo + ", ubicacion=" + ubicacion + ", estado=" + estado
+				+ ", sensor=" + Arrays.toString(sensor) + "]";
+	}
 
 }
