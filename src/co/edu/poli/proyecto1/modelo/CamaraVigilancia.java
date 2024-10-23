@@ -1,22 +1,9 @@
 package co.edu.poli.proyecto1.modelo;
 
-import java.io.*;
-import java.util.*;
 
-/**
- * 
- */
 public class CamaraVigilancia {
 
-    /**
-     * Default constructor
-     */
-    public CamaraVigilancia() {
-    }
-
-    /**
-     * 
-     */
+  
     private String idCamara;
 
     /**
@@ -29,7 +16,7 @@ public class CamaraVigilancia {
      */
     public void capturaImagen() {
         // TODO implement here
-        return null;
+        return ;
     }
 
     /**
@@ -37,7 +24,7 @@ public class CamaraVigilancia {
      */
     public void enviarAlerta() {
         // TODO implement here
-        return null;
+        return ;
     }
 
 }
